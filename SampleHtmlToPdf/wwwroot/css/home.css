@@ -1,0 +1,117 @@
+﻿.pdf-wrapper {
+    width: 100%;
+    max-width: 210mm; /* A4 width */
+    margin: 0 auto;
+}
+
+.page-section {
+    margin-bottom: 20px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.grid-cell {
+    padding: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.detail-label {
+    font-weight: 700;
+}
+
+.detail-header {
+    font-weight: 700;
+    padding: 5px 0;
+    background-color: #f0f0f0;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.pageBreakAvoid {
+    page-break-inside: avoid;
+}
+
+#uploadLabel {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+    #uploadLabel:hover:not(.k-state-disabled) {
+        background-color: #015ab1;
+        color: #ffffff;
+    }
+
+    #uploadLabel.k-state-disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+    .input-wrapper.required:after {
+        position: absolute;
+        top: 0;
+        right: -10px;
+        font-weight: bold;
+        color: red;
+        content: ' *';
+    }
+
+    .input-wrapper.required input {
+        padding-right: 15px;
+    }
+
+.k-widget {
+    font-family: "DejaVu Sans", "Arial", sans-serif;
+    font-size: .9em;
+}
+
+/* Media query for print */
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pdf-wrapper {
+        width: 100%;
+        max-width: none;
+    }
+
+    .pageBreakAvoid {
+        page-break-inside: avoid !important;
+    }
+
+    .section-divider {
+        page-break-after: always;
+    }
+
+    .grid-row {
+        font-size: 10pt;
+    }
+
+    .detail-header {
+        background-color: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

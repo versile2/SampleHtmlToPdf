@@ -1,0 +1,305 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<button id="PrintDetailsBtn">
+    Print Me
+</button>
+<input id="inputPaperID" type="hidden" name="PaperID" value="12345" />
+<input id="inputCaseNum" type="hidden" name="CaseNo" value="ABC-2023-001" />
+<div class="pdf-wrapper">
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">PAPER INFORMATION</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Case Style</div>
+            <div class="grid-cell">Smith v. Johnson</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Paper Type</div>
+            <div class="grid-cell">Legal Brief</div>
+            <div class="grid-cell detail-label">Court Date</div>
+            <div class="grid-cell">05/15/2023</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Requester Type</div>
+            <div class="grid-cell">Attorney</div>
+            <div class="grid-cell detail-label">Date Posted</div>
+            <div class="grid-cell">04/01/2023</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Date Issued</div>
+            <div class="grid-cell">03/28/2023</div>
+            <div class="grid-cell detail-label">Date Received</div>
+            <div class="grid-cell">03/30/2023</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Case Number</div>
+            <div class="grid-cell">ABC-2023-001</div>
+            <div class="grid-cell detail-label">OAG Case Number</div>
+            <div class="grid-cell">OAG-2023-789</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Tax Card Sent</div>
+            <div class="grid-cell">Yes</div>
+            <div class="grid-cell detail-label">Date Tax Card Sent</div>
+            <div class="grid-cell">04/05/2023</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">COMPLETION INFORMATION</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Status</div>
+            <div class="grid-cell">Completed on 05/01/2023</div>
+            <div class="grid-cell detail-label">Date Returned</div>
+            <div class="grid-cell">05/03/2023</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Completing Officer</div>
+            <div class="grid-cell">John Doe</div>
+            <div class="grid-cell detail-label">Date Mailed</div>
+            <div class="grid-cell">05/02/2023</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Address</div>
+            <div class="grid-cell">123 Main St</div>
+            <div class="grid-cell detail-label">Alternate Service</div>
+            <div class="grid-cell">N/A</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label"></div>
+            <div class="grid-cell">Anytown, USA 12345</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Comments</div>
+            <div class="grid-cell full-width" style="grid-column: 2 / -1;">Completed as requested. No issues encountered.</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">REQUESTER INFORMATION</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Court Title</div>
+            <div class="grid-cell">Superior Court</div>
+            <div class="grid-cell detail-label">Court Number</div>
+            <div class="grid-cell">SC-001</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Address</div>
+            <div class="grid-cell">456 Justice Ave</div>
+            <div class="grid-cell detail-label">Phone</div>
+            <div class="grid-cell">(555) 123-4567</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label"></div>
+            <div class="grid-cell">Lawville, USA 67890</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">RECIPIENT INFORMATION</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Name</div>
+            <div class="grid-cell">Jane Smith</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Address</div>
+            <div class="grid-cell">789 Oak Rd</div>
+            <div class="grid-cell detail-label">Home Phone</div>
+            <div class="grid-cell">(555) 987-6543</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label"></div>
+            <div class="grid-cell">Cityville, USA 54321</div>
+            <div class="grid-cell detail-label">Mobile Phone</div>
+            <div class="grid-cell">(555) 555-5555</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Date of Birth</div>
+            <div class="grid-cell">01/15/1980</div>
+            <div class="grid-cell detail-label">Office Phone</div>
+            <div class="grid-cell">(555) 111-2222</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Custodial Parent</div>
+            <div class="grid-cell">Jane Smith</div>
+            <div class="grid-cell detail-label">Non-Custodial Parent</div>
+            <div class="grid-cell">John Doe</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">RECIPIENT EMPLOYER INFORMATION</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Employer</div>
+            <div class="grid-cell">Acme Corporation</div>
+            <div class="grid-cell detail-label">Address</div>
+            <div class="grid-cell">100 Business Blvd</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Employer Phone</div>
+            <div class="grid-cell">(555) 999-8888</div>
+            <div class="grid-cell detail-label"></div>
+            <div class="grid-cell">Worktown, USA 11111</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">OFFICER ASSIGNMENT</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+                <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Officer Assigned</div>
+            <div class="grid-cell">Officer Sarah Brown</div>
+            <div class="grid-cell detail-label">Required Action:</div>
+            <div class="grid-cell">Serve papers and collect signature</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">ATTEMPTS</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Officer</div>
+            <div class="grid-cell detail-label">When</div>
+            <div class="grid-cell full-width detail-label">Comments</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell">Officer Sarah Brown</div>
+            <div class="grid-cell">07/25/23 02:00 PM</div>
+            <div class="grid-cell full-width">Attempt 1: No answer at the door. Left notice.</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell">Officer Sarah Brown</div>
+            <div class="grid-cell">07/24/23 02:00 PM</div>
+            <div class="grid-cell full-width">Attempt 2: No answer at the door. Left notice.</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell">Officer Sarah Brown</div>
+            <div class="grid-cell">07/23/23 02:00 PM</div>
+            <div class="grid-cell full-width">Attempt 3: No answer at the door. Left notice.</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">PAYMENT INFORMATION</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Fee Collection Date</div>
+            <div class="grid-cell">05/10/2023</div>
+            <div class="grid-cell detail-label">Fee Amount</div>
+            <div class="grid-cell">$150.00</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Instrument Type</div>
+            <div class="grid-cell">Credit Card</div>
+            <div class="grid-cell detail-label">Instrument #</div>
+            <div class="grid-cell">XXXX-XXXX-XXXX-1234</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Receipt Number</div>
+            <div class="grid-cell">RCP-2023-5678</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell detail-label">Delayed Payer Type</div>
+            <div class="grid-cell">N/A</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid printNotes" style="display: none;">
+        <div class="grid-row detail-header">
+            <div class="grid-cell full-width">NOTES</div>
+        </div>
+    </div>
+
+    <div class="page-section pageBreakAvoid">
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo1</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo5</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo5</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo1</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo5</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo9</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo2</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo4</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo7</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo0</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo9</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-cell full-width">RandomInfo6</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/Scripts/home.js"></script>
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
