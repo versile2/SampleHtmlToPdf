@@ -47,10 +47,10 @@ function exportToPDF() {
             pdf.setTextColor(150);
 
             // Add custom text to the left
-            pdf.text(footerText, 10, pdf.internal.pageSize.getHeight() - 10);
+            pdf.text(footerText, 10, pdf.internal.pageSize.getHeight() - 25);
 
             // Add page numbers to the right
-            pdf.text(`Page ${i} of ${totalPages}`, pdf.internal.pageSize.getWidth() - 10, pdf.internal.pageSize.getHeight() - 10, { align: 'right' });
+            pdf.text(`Page ${i} of ${totalPages}`, pdf.internal.pageSize.getWidth() - 10, pdf.internal.pageSize.getHeight() - 25, { align: 'right' });
         }
     }).save().then(function () {
         console.log('PDF generated and saved successfully');
