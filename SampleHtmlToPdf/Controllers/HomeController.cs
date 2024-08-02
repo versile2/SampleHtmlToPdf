@@ -6,7 +6,6 @@ namespace SampleHtmlToPdf.Controllers
 {
     public class HomeController : Controller
     {
-
         public HomeController()
         {
             
@@ -22,11 +21,5 @@ namespace SampleHtmlToPdf.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult HtmlToPdf(string html)
-        {
-            //PdfDocument pdf = TheArtOfDev.HtmlRenderer.PdfSharp.PdfGeneratePdf(html, PdfSharp.PageSize.Letter);
-            return View();
-        }
     }
 }
